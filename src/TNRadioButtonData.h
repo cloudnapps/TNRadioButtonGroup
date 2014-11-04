@@ -18,4 +18,5 @@
 @property (nonatomic, strong) UIFont *labelFont;
 @property (nonatomic, strong) UIColor *labelColor;
 
+@property (nonatomic) CGFloat labelWidth;
 @end

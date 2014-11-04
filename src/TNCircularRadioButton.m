@@ -35,16 +35,15 @@
 
 #pragma mark - Creation
 - (void)setup{
-    
     [self createRadioButton];
-    
     [super setup];
+    [self update];
 }
 
 - (void)update {
 	[super update];
 
-    self.radioButton.frame = CGRectMake(0, 0, self.data.borderRadius, self.data.borderRadius);
+    self.radioButton.frame = CGRectMake(0, (self.lblLabel.frame.size.height - self.data.borderRadius) /2, self.data.borderRadius, self.data.borderRadius);
 
 	[self updateBorder];
 	[self updateCircle];
